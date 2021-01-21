@@ -1,0 +1,51 @@
+{
+  "name": "nextstarter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "snowpack dev",
+    "build": "snowpack build",
+    "start": "snowpack dev",
+    "export": "next build && next export",
+    "format": "prettier '{components,content,pages,styles}/**/*.{css,js}' --write"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^4.1.0",
+    "autoprefixer": "^10.2.3",
+    "js-cookie": "^2.2.1",
+    "next": "^10.0.5",
+    "next-seo": "^4.17.0",
+    "postcss": "^8.2.4",
+    "react": "^17.0.1",
+    "react-awesome-reveal": "^3.7.0",
+    "react-dom": "^17.0.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "6.x",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gray-matter": "^4.0.2",
+    "husky": "^4.3.7",
+    "lint-staged": "^10.5.2",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "react-inlinesvg": "^2.2.2",
+    "snowpack": "^3.0.11",
+    "tailwind-bootstrap-grid": "^3.1.0",
+    "tailwindcss-debug-screens": "^2.0.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && pretty-quick --staged"
+    }
+  }
+}
