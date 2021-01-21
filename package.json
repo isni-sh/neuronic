@@ -6,7 +6,7 @@
     "dev": "snowpack dev",
     "build": "snowpack build",
     "start": "snowpack dev",
-    "export": "next build && next export",
+    "export": "snowpack build && snowpack export",
     "format": "prettier '{components,content,pages,styles}/**/*.{css,js}' --write"
   },
   "dependencies": {
